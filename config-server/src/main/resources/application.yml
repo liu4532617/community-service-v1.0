@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liu4532617/community-config.git
+          username: liulin4532617@163.com
+          password: QazWsx2018
+          basedir: F:\\liulinspace\\baseDir
+  application:
+    name: configserver
+server:
+  port: 8302
