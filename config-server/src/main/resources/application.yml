@@ -16,4 +16,8 @@ eureka:
     service-url:
       ##config 配置eureka 的集群地址
       defaultZone: http://localhost:8021/eureka,http://localhost:8020/eureka
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
