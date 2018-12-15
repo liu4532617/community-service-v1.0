@@ -7,7 +7,13 @@ spring:
           username: liulin4532617@163.com
           password: QazWsx2018
           basedir: F:\\liulinspace\\baseDir
+          search-paths: /**
+      label: master
   application:
     name: configserver
-server:
-  port: 8302
+eureka:
+  client:
+    service-url:
+      ##config 配置eureka 的集群地址
+      defaultZone: http://localhost:8021/eureka,http://localhost:8020/eureka
+
