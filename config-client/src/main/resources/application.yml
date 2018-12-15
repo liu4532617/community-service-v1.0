@@ -6,5 +6,10 @@ spring:
 eureka:
   client:
     service-url:
-      ##eureka 的集群地址
+      ##eureka
       defaultZone: http://localhost:8021/eureka,http://localhost:8020/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

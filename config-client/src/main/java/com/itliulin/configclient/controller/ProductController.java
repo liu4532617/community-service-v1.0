@@ -3,15 +3,16 @@ package com.itliulin.configclient.controller;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author liulin
  * @date 2018/12/11
  */
+@RefreshScope
 @RestController
 public class ProductController {
 

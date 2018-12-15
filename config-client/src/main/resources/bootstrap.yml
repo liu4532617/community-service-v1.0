@@ -6,5 +6,5 @@ spring:
         service-id: configserver
       label: master
       profile: dev
-      ## 配置集群的configserver 地址
+      #閰嶇疆闆嗙兢鍦板潃
       uri: http://localhost:8312/,http://localhost:8315/
