@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        service-id: configserver
+      label: master
+      profile: dev
+      ## 配置集群的configserver 地址
+      uri: http://localhost:8312/,http://localhost:8315/

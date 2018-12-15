@@ -1,0 +1,10 @@
+server:
+  port: 8305
+spring:
+  application:
+    name: community
+eureka:
+  client:
+    service-url:
+      ##eureka 的集群地址
+      defaultZone: http://localhost:8021/eureka,http://localhost:8020/eureka
